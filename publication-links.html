@@ -1,0 +1,8 @@
+{% assign publication = include.pub %}
+{% if publication.links and publication.links.size > 0 %}
+  <div class="publication-links">
+    {% for item in publication.links %}
+      <a class="pub-link" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.label }}</a>
+    {% endfor %}
+  </div>
+{% endif %}
