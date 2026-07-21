@@ -1,0 +1,9 @@
+- key: methods
+  title: "Statistics: Methods and Theory"
+  description: "High-dimensional and semiparametric inference, transfer and semi-supervised learning, robust optimization, model-X inference, and privacy-aware multi-source analysis."
+- key: informatics
+  title: "Biomedical Informatics"
+  description: "Statistical and machine-learning methods for electronic health records, biobanks, phenotyping, federated learning, and proteomic data."
+- key: collaborative
+  title: "Collaborative Research"
+  description: "Large-scale collaborative studies in genetics, health informatics, and population health."
