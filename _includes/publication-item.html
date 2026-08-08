@@ -1,7 +1,0 @@
-{% assign publication = include.post %}
-<article class="publication-item{% if include.compact %} publication-item--compact{% endif %}">
-  <h4 class="publication-title"><a href="{{ publication.url }}">{{ publication.title }}</a></h4>
-  <div class="publication-citation">{{ publication.citation }}</div>
-  {% if publication.note %}<div class="publication-note">{{ publication.note }}</div>{% endif %}
-  {% include publication-links.html pub=publication %}
-</article>

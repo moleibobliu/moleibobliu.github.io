@@ -1,77 +1,189 @@
-# Molei Liu — Academic Pages website
+# Molei Liu / 刘默雷 — Personal Academic Website
 
-This repository is a migration of the previous hand-written Jekyll homepage to the **Academic Pages** faculty-site style. It pins the upstream theme to `v0.8.4` through `jekyll-remote-theme`, while keeping all personal content and visual overrides in this repository.
+A lightweight bilingual academic website designed for GitHub Pages.
 
-## What was migrated
+**Repository target:** `moleibobliu/moleibobliu.github.io`
 
-- 43 publications, separated into methods/theory, biomedical informatics, and collaborative research
-- Five talks, including the two existing video links
-- Research interests and academic experience
-- Teaching, mentoring, and professional service
-- Redirects for the previous `/pub/` and `/talk/` URLs
+## Files
 
-## Deploy on GitHub Pages
-
-1. Back up the existing `moleibobliu.github.io` repository.
-2. Replace its contents with the contents of this folder and push to `master` or `main`.
-3. In **Repository Settings → Pages**, set **Source** to **GitHub Actions**.
-4. Open the **Actions** tab and confirm that “Build and deploy academic website” succeeds.
-
-The included workflow builds and deploys the site after every push to `master` or `main`.
-
-## Preview locally
-
-```bash
-bundle install
-bundle exec jekyll serve --livereload
+```text
+.
+├── index.html
+├── styles.css
+├── data.js
+├── script.js
+├── .nojekyll
+├── README.md
+└── assets
+    ├── CV_Molei_Liu_CN.pdf
+    └── images
+        └── people
+            ├── placeholder.svg
+            └── README.md
 ```
 
-Then open `http://localhost:4000`.
+## Deploy to GitHub Pages
 
-## Routine updates
+1. Create or open the repository:
+   `moleibobliu/moleibobliu.github.io`
+2. Upload **all files in this folder to the repository root**.
+3. Commit to the `main` branch.
+4. In GitHub, open **Settings → Pages**.
+5. Under **Build and deployment**, choose:
+   - **Source:** Deploy from a branch
+   - **Branch:** `main`
+   - **Folder:** `/ (root)`
+6. The site should be served at:
+   `https://moleibobliu.github.io`
 
-### Add or edit a publication
+Because the repository name already matches the GitHub Pages user-site convention, no framework or build command is required.
 
-Each publication is a Markdown file in `_publications/`. Copy an existing file, or run:
+---
 
-```bash
-python scripts/new_publication.py \
-  --title "Paper title" \
-  --citation "Authors. 2026. Journal." \
-  --venue "Journal" \
-  --year 2026 \
-  --area methods \
-  --paper-url "https://..." \
-  --selected
+## 最常用的修改：添加课题组成员
+
+打开 `data.js`，找到：
+
+```js
+const PEOPLE = {
+  postdoc: [],
+  phd: [],
+  master: []
+};
 ```
 
-Set `selected: true` to show an item on the homepage. Valid research areas are `methods`, `informatics`, and `collaborative`.
+例如添加一名博士生：
 
-### Add a talk
-
-Copy a file in `_talks/`, then edit its title, date, venue, and optional `video_url`.
-
-### Update biography or experience
-
-Edit `_pages/about.md`.
-
-### Update navigation
-
-Edit `_data/navigation.yml`.
-
-### Add the CV
-
-Place the PDF at `files/Molei_Liu_CV.pdf`, then uncomment the download button in `_pages/cv.md`.
-
-## Validation
-
-Install the small validation dependencies and run:
-
-```bash
-python -m pip install -r scripts/requirements.txt
-python scripts/validate_site.py
+```js
+const PEOPLE = {
+  postdoc: [],
+  phd: [
+    {
+      name: { en: "Firstname Lastname", zh: "中文名" },
+      role: { en: "Ph.D. Student", zh: "博士研究生" },
+      interests: {
+        en: "Transfer learning; causal inference",
+        zh: "迁移学习；因果推断"
+      },
+      photo: "assets/images/people/firstname.jpg",
+      email: "name@pku.edu.cn",
+      homepage: ""
+    }
+  ],
+  master: []
+};
 ```
 
-## Theme attribution
+然后把照片放到：
 
-The visual foundation is Academic Pages, derived from Minimal Mistakes and distributed under the MIT License. Local content and custom styling are maintained separately in this repository.
+```text
+assets/images/people/firstname.jpg
+```
+
+建议照片比例接近 **4:3 横图**；网页会自动裁剪。
+
+---
+
+## 更换主页个人照片
+
+当前主页右侧使用的是极简的 `ML` 占位图。
+
+如果想加入正式照片，可以：
+
+1. 把照片保存为 `assets/images/molei.jpg`
+2. 在 `index.html` 中找到：
+
+```html
+<div class="profile-placeholder" aria-hidden="true">
+  <span>ML</span>
+</div>
+```
+
+替换为：
+
+```html
+<img
+  class="person-photo"
+  src="assets/images/molei.jpg"
+  alt="Molei Liu"
+>
+```
+
+如果希望主页照片更高，可以在 `styles.css` 里单独调整图片高度。
+
+---
+
+## 修改论文列表
+
+在 `data.js` 里的 `PUBLICATIONS` 数组修改。
+
+```js
+{
+  year: "2026",
+  title: "Paper title",
+  authors: "A. Author, M. Liu",
+  venue: "Journal / Conference",
+  category: "statistics", // statistics | ml | biomedical
+  selected: true,        // 首页默认是否展示
+  badge: "JASA"
+}
+```
+
+- `selected: true`：默认精简模式下展示
+- `selected: false`：点击“Show all listed work / 显示全部论文”后展示
+- `category` 控制统计学 / 机器学习 / 生物医学筛选
+
+---
+
+## 修改中英文文字
+
+绝大多数双语文字都在 `data.js` 的 `I18N` 中。
+
+页面会记住访客最近使用的语言（通过浏览器 `localStorage`）。
+
+---
+
+## Adding an English CV
+
+The current package includes the Chinese CV as:
+
+```text
+assets/CV_Molei_Liu_CN.pdf
+```
+
+If you later add an English CV, for example:
+
+```text
+assets/CV_Molei_Liu_EN.pdf
+```
+
+you can add a second button or change the CV link in `index.html`.
+
+---
+
+## Design choices
+
+- No React / Vue / Jekyll dependency
+- No external fonts, icons, or CDNs
+- Mobile responsive
+- Bilingual English / Chinese toggle
+- Search-engine-friendly metadata
+- Accessible navigation and semantic HTML
+- Easy-to-edit group member and publication data
+- Suitable for direct GitHub Pages deployment
+
+## Local preview
+
+From the project folder:
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+You can also double-click `index.html`, but a local server is closer to the GitHub Pages environment.

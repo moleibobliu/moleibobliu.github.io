@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Molei Liu — statistical machine learning, transfer learning, robust inference, and biomedical data science." />
+  <meta name="author" content="Molei Liu" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Molei Liu | 刘默雷</title>
+
+  <meta property="og:title" content="Molei Liu | 刘默雷" />
+  <meta property="og:description" content="Statistical machine learning, transfer learning, robust inference, and biomedical data science." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Molei Liu",
+    "alternateName": "刘默雷",
+    "affiliation": [
+      {"@type": "Organization", "name": "Peking University Health Science Center"},
+      {"@type": "Organization", "name": "Beijing International Center for Mathematical Research, Peking University"}
+    ],
+    "email": "mailto:moleiliu@bjmu.edu.cn",
+    "url": "https://moleibobliu.github.io"
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Molei Liu home">
+        <span class="brand-mark">ML</span>
+        <span class="brand-text">Molei Liu <span class="zh-inline">刘默雷</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#research" data-i18n="nav.research">Research</a>
+        <a href="#publications" data-i18n="nav.publications">Publications</a>
+        <a href="#people" data-i18n="nav.people">Group</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#service" data-i18n="nav.service">Service</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+        <span id="lang-label">中文</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Statistical Machine Learning · Biomedical Data Science</p>
+          <h1>
+            <span class="hero-name">Molei Liu</span>
+            <span class="hero-cn">刘默雷</span>
+          </h1>
+          <p class="hero-title" data-i18n="hero.title">
+            Researcher & Assistant Professor (Tenure Track), Peking University
+          </p>
+          <p class="hero-lead" data-i18n="hero.lead">
+            I develop robust and transferable statistical learning methods for heterogeneous biomedical data, with emphasis on transfer learning, semi-supervised learning, model-X inference, and electronic health records.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#publications" data-i18n="hero.publications">Selected publications</a>
+            <a class="btn btn-secondary" href="assets/CV_Molei_Liu_CN.pdf" target="_blank" rel="noopener" data-i18n="hero.cv">CV (Chinese)</a>
+          </div>
+
+          <div class="hero-links" aria-label="Academic links">
+            <a href="mailto:moleiliu@bjmu.edu.cn">moleiliu@bjmu.edu.cn</a>
+            <a href="https://github.com/moleibobliu" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Profile highlights">
+          <div class="profile-placeholder" aria-hidden="true">
+            <span>ML</span>
+          </div>
+          <div class="hero-card-body">
+            <p class="hero-card-title" data-i18n="hero.affiliationTitle">Current affiliation</p>
+            <p data-i18n="hero.affiliation1">Peking University Health Science Center</p>
+            <p data-i18n="hero.affiliation2">Beijing International Center for Mathematical Research</p>
+            <div class="mini-divider"></div>
+            <p class="hero-card-title" data-i18n="hero.trainingTitle">Training</p>
+            <p data-i18n="hero.training">Ph.D. in Biostatistics, Harvard University</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="container strengths">
+        <div class="strength">
+          <span class="strength-kicker" data-i18n="strengths.oneKicker">Methodology</span>
+          <strong data-i18n="strengths.oneTitle">Robust & transferable learning</strong>
+          <p data-i18n="strengths.oneText">Methods designed for distribution shift, heterogeneous sources, weak supervision, and imperfect models.</p>
+        </div>
+        <div class="strength">
+          <span class="strength-kicker" data-i18n="strengths.twoKicker">Impact</span>
+          <strong data-i18n="strengths.twoTitle">Statistics + machine learning</strong>
+          <p data-i18n="strengths.twoText">Work spanning Biometrika, JRSSB, JASA, JMLR, NeurIPS, ICML, and Science.</p>
+        </div>
+        <div class="strength">
+          <span class="strength-kicker" data-i18n="strengths.threeKicker">Application</span>
+          <strong data-i18n="strengths.threeTitle">Biomedical data science</strong>
+          <p data-i18n="strengths.threeText">Electronic health records, biobanks, genetics, clinical prediction, and data integration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <div class="section-heading">
+          <span class="section-index">01</span>
+          <div>
+            <h2 data-i18n="about.title">About</h2>
+            <p data-i18n="about.subtitle">Statistical foundations for reliable learning across populations and data sources.</p>
+          </div>
+        </div>
+        <div class="prose-grid">
+          <p data-i18n="about.p1">
+            My research lies at the intersection of statistics, machine learning, and biomedical data science. A central goal is to make statistical learning reliable when data are distributed across institutions, populations differ, labels are limited, or working models are misspecified.
+          </p>
+          <p data-i18n="about.p2">
+            Methodologically, I work on transfer and federated learning, semi-supervised learning, robust model-X inference, distributionally robust optimization, and integrative analysis of high-dimensional data. I am particularly interested in translating these ideas into tools for electronic health records, biobanks, genetics, and clinical research.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-index">02</span>
+          <div>
+            <h2 data-i18n="research.title">Research</h2>
+            <p data-i18n="research.subtitle">A compact view of my main methodological themes.</p>
+          </div>
+        </div>
+
+        <div class="research-grid" id="research-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-index">03</span>
+          <div>
+            <h2 data-i18n="publications.title">Selected Publications</h2>
+            <p data-i18n="publications.subtitle">Selected methodological and collaborative work.</p>
+          </div>
+        </div>
+
+        <div class="pub-toolbar">
+          <div class="pub-filters" id="pub-filters" role="group" aria-label="Publication filters"></div>
+          <button class="text-button" id="toggle-all-pubs" type="button" data-i18n="publications.showAll">Show all listed work</button>
+        </div>
+
+        <div class="pub-list" id="pub-list"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="people">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-index">04</span>
+          <div>
+            <h2 data-i18n="people.title">Research Group</h2>
+            <p data-i18n="people.subtitle">Postdoctoral fellows, Ph.D. students, and master’s students.</p>
+          </div>
+        </div>
+
+        <div class="people-note">
+          <p data-i18n="people.note">
+            Member information is stored in one data file. Add a photo and update a few fields to publish a new profile card.
+          </p>
+        </div>
+
+        <div id="people-groups"></div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-index">05</span>
+          <div>
+            <h2 data-i18n="experience.title">Experience & Education</h2>
+            <p data-i18n="experience.subtitle">Academic appointments, training, awards, and research support.</p>
+          </div>
+        </div>
+
+        <div class="timeline-layout">
+          <div>
+            <h3 class="subheading" data-i18n="experience.appointments">Academic appointments</h3>
+            <div class="timeline" id="appointments"></div>
+          </div>
+          <div>
+            <h3 class="subheading" data-i18n="experience.education">Education</h3>
+            <div class="timeline" id="education"></div>
+          </div>
+        </div>
+
+        <div class="two-col-panels">
+          <article class="panel">
+            <h3 data-i18n="experience.awards">Selected honors</h3>
+            <div id="awards"></div>
+          </article>
+          <article class="panel">
+            <h3 data-i18n="experience.funding">Selected research support</h3>
+            <div id="funding"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="service">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-index">06</span>
+          <div>
+            <h2 data-i18n="service.title">Academic Service</h2>
+            <p data-i18n="service.subtitle">Professional service to statistics, machine learning, and biomedical data science.</p>
+          </div>
+        </div>
+
+        <div class="service-grid">
+          <article class="panel">
+            <h3 data-i18n="service.editorial">Journal & conference reviewing</h3>
+            <p data-i18n="service.editorialText">
+              Reviewer for leading outlets including JASA, JRSSB, JMLR, Biometrika, Biometrics, Annals of Statistics, Statistical Science, COLT, and others.
+            </p>
+          </article>
+          <article class="panel">
+            <h3 data-i18n="service.society">Professional societies</h3>
+            <p data-i18n="service.societyText">
+              Deputy Secretary-General, Medical Mathematics Branch of the Chinese Mathematical Society; Standing Committee Member, Medical and Biostatistics Branch of the Chinese Association for Applied Statistics.
+            </p>
+          </article>
+          <article class="panel">
+            <h3 data-i18n="service.talks">Talks & organization</h3>
+            <p data-i18n="service.talksText">
+              Invited talks on transfer learning, model-X inference, EHR data science, and robust learning; organizer of an IMS-invited session at ENAR 2024.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-index">07</span>
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p data-i18n="contact.text">
+            I am interested in collaborations at the interface of statistical methodology, machine learning, and biomedical research.
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:moleiliu@bjmu.edu.cn">moleiliu@bjmu.edu.cn</a>
+          <span data-i18n="contact.affiliation">Peking University, Beijing, China</span>
+          <a href="assets/CV_Molei_Liu_CN.pdf" target="_blank" rel="noopener" data-i18n="contact.cv">Download CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Molei Liu.</p>
+      <p data-i18n="footer.text">Built as a lightweight bilingual GitHub Pages site.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
