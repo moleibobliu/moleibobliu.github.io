@@ -13,7 +13,7 @@ Put your image at `assets/images/molei.jpg`, then in `index.html` replace:
 ```html
 <img src="assets/images/profile-placeholder.svg" alt="Molei Liu profile placeholder" />
 ```
-
+ 
 with:
 
 ```html
