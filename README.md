@@ -10,10 +10,11 @@ This version intentionally simplifies the visual design while strengthening the 
 - Dedicated **Interdisciplinary Collaborations** section
 - Dedicated **Selective Preprints & Manuscripts** section
 - Every displayed work has an explicit authorship/contribution label
+- Default methodology view includes all JASA/JRSSB/Biometrika/JMLR papers in the current list
 - Bilingual English/Chinese
 - Research-group module retained
 
-## Deploy 
+## Deploy
 
 Upload all files in this folder directly to the root of:
 
@@ -34,7 +35,7 @@ Then replace in `index.html`:
 ```html
 <img src="assets/images/profile-placeholder.svg" alt="Molei Liu profile placeholder">
 ```
- 
+
 with:
 
 ```html
@@ -73,3 +74,7 @@ python -m http.server 8000
 ```
 
 Then open `http://localhost:8000`.
+
+## V4 content policy
+
+Grant and award information is intentionally omitted from the homepage. The About section focuses on academic appointments and training.
