@@ -1,50 +1,92 @@
-# Molei Liu / 刘默雷 — Academic Homepage V3
+# Molei Liu / 刘默雷 — Academic Homepage
 
-This version intentionally simplifies the visual design while strengthening the academic content.
+This is a pure static GitHub Pages site. No build framework is required.
 
-## Main changes
+## Deploy
 
-- Simpler faculty-homepage style 
-- No CV download/file
-- Methodological research remains the primary identity 
-- Dedicated **Interdisciplinary Collaborations** section
-- Dedicated **Selective Preprints & Manuscripts** section
-- Every displayed work has an explicit authorship/contribution label 
-- Default methodology view includes all JASA/JRSSB/Biometrika/JMLR papers in the current list
-- Bilingual English/Chinese
-- Research-group module retained
-
-## Deploy 
-
-Upload all files in this folder directly to the root of:
+Upload the files in this folder directly to the root of:
 
 `moleibobliu/moleibobliu.github.io`
 
-Then go to **Settings → Pages → Deploy from a branch** and use the branch containing the files (your repository has used `master`) with `/ (root)`.
+Use:
 
-If you previously clicked **Unpublish site**, save the publishing source again and make one new commit to the publishing branch to trigger a fresh Pages deployment.
+- **Settings → Pages**
+- **Deploy from a branch**
+- Branch: `master`
+- Folder: `/ (root)`
 
-## Replace your profile photo
+## Main content files
 
-Put your photo at:
+- `index.html` — page structure
+- `styles.css` — visual style
+- `data.js` — publications, manuscripts, bilingual text, group members
+- `script.js` — rendering, bilingual switch, author highlighting
+- `assets/images/molei.jpg` — profile photo
 
-`assets/images/molei.jpg`
+## Publications
 
-Then replace in `index.html`:
+All methodology papers are now shown directly in the order in `METHODOLOGY`; there is no selected/unselected distinction and no topic filter.
 
-```html
-<img src="assets/images/profile-placeholder.svg" alt="Molei Liu profile placeholder">
+Each work may have:
+
+```js
+link: "https://..."
 ```
 
-with:
+The paper title becomes clickable. If a link is uncertain in the future, use:
 
-```html
-<img src="assets/images/molei.jpg" alt="Molei Liu">
+```js
+link: ""
 ```
 
-## Add group members
+## Manuscript status
 
-Edit the `PEOPLE` object at the bottom of `data.js`.
+Available `statusKey` values:
+
+```js
+"minor"        // Under minor revision / 小修中
+"major"        // Under major revision / 大修中
+"submission"   // In submission / 投稿中
+"preparation"  // In preparation / 准备中
+```
+
+For example:
+
+```js
+{
+  year: "2026+",
+  title: "New manuscript",
+  authors: "A. Author, M. Liu",
+  venue: "Manuscript",
+  statusKey: "preparation",
+  roleKey: "coCorr",
+  link: ""
+}
+```
+
+## Authorship contribution labels
+
+Available role keys include:
+
+```js
+soleFirst
+coFirst
+soleCorr
+coCorr
+soleFirstCorr
+coFirstSoleCorr
+coFirstCoCorr
+alphabetical
+coauthor
+```
+
+The website automatically bolds `M. Liu`, `M Liu`, and `Molei Liu` in author lists.
+
+## Group members
+
+Edit `PEOPLE` at the bottom of `data.js`.
+
+Example:
 
 ```js
 phd: [
@@ -59,13 +101,7 @@ phd: [
 ]
 ```
 
-## Contribution labels
-
-The labels are based on authorship notes explicitly stated in the supplied CV. For work where the CV did not identify a special first/corresponding-author role, the site uses the conservative label **Co-author** rather than inferring a stronger contribution from author order.
-
-## Manuscript status
-
-The preprint/manuscript statuses are copied from the supplied CV: under minor revision, under major revision, or in submission. Update `PREPRINTS` in `data.js` whenever status changes.
+Put photos in `assets/images/people/`.
 
 ## Local preview
 
@@ -74,7 +110,3 @@ python -m http.server 8000
 ```
 
 Then open `http://localhost:8000`.
-
-## V4 content policy
-
-Grant and award information is intentionally omitted from the homepage. The About section focuses on academic appointments and training.
