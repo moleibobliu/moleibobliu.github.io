@@ -13,7 +13,7 @@ This version intentionally simplifies the visual design while strengthening the 
 - Bilingual English/Chinese
 - Research-group module retained
 
-## Deploy
+## Deploy 
 
 Upload all files in this folder directly to the root of:
 
