@@ -9,7 +9,7 @@ This version intentionally simplifies the visual design while strengthening the 
 - Methodological research remains the primary identity 
 - Dedicated **Interdisciplinary Collaborations** section
 - Dedicated **Selective Preprints & Manuscripts** section
-- Every displayed work has an explicit authorship/contribution label
+- Every displayed work has an explicit authorship/contribution label 
 - Default methodology view includes all JASA/JRSSB/Biometrika/JMLR papers in the current list
 - Bilingual English/Chinese
 - Research-group module retained
