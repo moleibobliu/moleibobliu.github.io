@@ -1,52 +1,75 @@
-# Molei Liu / 刘默雷 — Academic Website V2
+# Molei Liu / 刘默雷 — Academic Homepage V3
 
-A bilingual, pure-static GitHub Pages site. **No CV file is included.** No Jekyll, npm, Ruby, or build step is required.
+This version intentionally simplifies the visual design while strengthening the academic content.
+
+## Main changes
+
+- Simpler faculty-homepage style
+- No CV download/file
+- Methodological research remains the primary identity
+- Dedicated **Interdisciplinary Collaborations** section
+- Dedicated **Selective Preprints & Manuscripts** section
+- Every displayed work has an explicit authorship/contribution label
+- Bilingual English/Chinese
+- Research-group module retained
 
 ## Deploy
-Upload everything in this folder directly to the root of `moleibobliu/moleibobliu.github.io`.
 
-Then use **Settings → Pages → Deploy from a branch**, select the branch that contains these files (your repository has used `master`), and select `/ (root)`.
+Upload all files in this folder directly to the root of:
 
-## Add your profile photo
-Put your image at `assets/images/molei.jpg`, then in `index.html` replace:
+`moleibobliu/moleibobliu.github.io`
+
+Then go to **Settings → Pages → Deploy from a branch** and use the branch containing the files (your repository has used `master`) with `/ (root)`.
+
+If you previously clicked **Unpublish site**, save the publishing source again and make one new commit to the publishing branch to trigger a fresh Pages deployment.
+
+## Replace your profile photo
+
+Put your photo at:
+
+`assets/images/molei.jpg`
+
+Then replace in `index.html`:
 
 ```html
-<img src="assets/images/profile-placeholder.svg" alt="Molei Liu profile placeholder" />
+<img src="assets/images/profile-placeholder.svg" alt="Molei Liu profile placeholder">
 ```
  
 with:
 
 ```html
-<img src="assets/images/molei.jpg" alt="Molei Liu" />
+<img src="assets/images/molei.jpg" alt="Molei Liu">
 ```
 
 ## Add group members
-Edit `PEOPLE` at the bottom of `data.js`.
+
+Edit the `PEOPLE` object at the bottom of `data.js`.
 
 ```js
-const PEOPLE = {
-  postdoc: [],
-  phd: [
-    {
-      name: { en: "Jane Doe", zh: "张三" },
-      role: { en: "Ph.D. Student", zh: "博士研究生" },
-      interests: { en: "Transfer learning", zh: "迁移学习" },
-      photo: "assets/images/people/jane.jpg",
-      email: "jane@pku.edu.cn",
-      homepage: ""
-    }
-  ],
-  master: []
-};
+phd: [
+  {
+    name: { en: "Jane Doe", zh: "张三" },
+    role: { en: "Ph.D. Student", zh: "博士研究生" },
+    interests: { en: "Transfer learning", zh: "迁移学习" },
+    photo: "assets/images/people/jane.jpg",
+    email: "jane@pku.edu.cn",
+    homepage: ""
+  }
+]
 ```
 
-## Publication display
-`PUBLICATIONS` in `data.js` contains the methodology/theory list used by the site. Set `selected: true` to show a paper in the compact default view.
+## Contribution labels
 
-Topics: `transfer`, `inference`, `semisup`, `robustml`.
+The labels are based on authorship notes explicitly stated in the supplied CV. For work where the CV did not identify a special first/corresponding-author role, the site uses the conservative label **Co-author** rather than inferring a stronger contribution from author order.
+
+## Manuscript status
+
+The preprint/manuscript statuses are copied from the supplied CV: under minor revision, under major revision, or in submission. Update `PREPRINTS` in `data.js` whenever status changes.
 
 ## Local preview
+
 ```bash
 python -m http.server 8000
 ```
-Open `http://localhost:8000`.
+
+Then open `http://localhost:8000`.

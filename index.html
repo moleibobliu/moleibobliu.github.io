@@ -1,126 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Molei Liu — statistical methodology, robust transfer learning, semi-supervised learning, model-X inference, and biomedical data science." />
-  <meta name="author" content="Molei Liu" />
-  <meta name="theme-color" content="#0b1020" />
-  <meta property="og:title" content="Molei Liu | 刘默雷" />
-  <meta property="og:description" content="Statistical methodology for robust, transferable and data-efficient learning." />
-  <meta property="og:type" content="website" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Molei Liu — statistical methodology, transfer learning, robust inference, and biomedical data science.">
   <title>Molei Liu | 刘默雷</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-glow glow-a" aria-hidden="true"></div>
-  <div class="page-glow glow-b" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
-
-  <header class="topbar">
-    <div class="shell nav-inner">
-      <a class="brand" href="#home" aria-label="Molei Liu home"><span class="brand-dot"></span><span>Molei Liu</span></a>
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#research" data-i18n="nav.research">Research</a>
-        <a href="#publications" data-i18n="nav.publications">Publications</a>
-        <a href="#people" data-i18n="nav.people">Group</a>
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
-      </nav>
-      <div class="nav-actions">
-        <button class="lang-btn" id="lang-btn" type="button" aria-label="Switch language"><span id="lang-label">中文</span></button>
-        <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
-      </div>
-    </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#home">Molei Liu <span>刘默雷</span></a>
+    <nav class="nav-links" id="nav-links">
       <a href="#research" data-i18n="nav.research">Research</a>
-      <a href="#publications" data-i18n="nav.publications">Publications</a>
+      <a href="#methodology" data-i18n="nav.methodology">Methodology</a>
+      <a href="#collaboration" data-i18n="nav.collaboration">Collaborations</a>
+      <a href="#preprints" data-i18n="nav.preprints">Preprints</a>
       <a href="#people" data-i18n="nav.people">Group</a>
       <a href="#about" data-i18n="nav.about">About</a>
-      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
-  </header>
+    <div class="nav-actions">
+      <button class="lang-button" id="lang-button" type="button">中文</button>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
 
-  <main>
-    <section class="hero shell" id="home">
-      <div class="hero-main">
-        <div class="hero-copy">
-          <div class="availability-pill"><span class="pulse"></span><span data-i18n="hero.affiliationShort">Peking University · Biostatistics & Statistical ML</span></div>
-          <p class="hero-kicker" data-i18n="hero.kicker">Statistical methodology for reliable learning across populations.</p>
-          <h1><span class="name-en">Molei Liu</span><span class="name-cn">刘默雷</span></h1>
-          <p class="hero-statement" data-i18n="hero.statement">I develop robust, transferable, and data-efficient statistical learning methods — with a focus on transfer learning, semi-supervised learning, model-X inference, and biomedical data science.</p>
-          <div class="hero-cta">
-            <a class="primary-link" href="#research"><span data-i18n="hero.explore">Explore my research</span><span aria-hidden="true">↘</span></a>
-            <a class="secondary-link" href="mailto:moleiliu@bjmu.edu.cn"><span data-i18n="hero.email">Email me</span></a>
-          </div>
-          <div class="academic-links"><a href="https://github.com/moleibobliu" target="_blank" rel="noopener">GitHub ↗</a><a href="mailto:moleiliu@bjmu.edu.cn">moleiliu@bjmu.edu.cn</a></div>
-        </div>
+<main>
+<section class="hero container" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Statistical Methodology · Machine Learning · Biomedical Data Science</p>
+    <h1>Molei Liu <span>刘默雷</span></h1>
+    <p class="hero-title" data-i18n="hero.title">Researcher & Assistant Professor (Tenure Track), Peking University</p>
+    <p class="hero-intro" data-i18n="hero.intro">I develop statistical learning methods that remain reliable across heterogeneous populations, data sources, and imperfect models, with particular interests in transfer learning, semi-supervised learning, model-X inference, and biomedical data science.</p>
+    <div class="hero-links">
+      <a href="#methodology" class="button button-dark" data-i18n="hero.work">View selected work</a>
+      <a href="mailto:moleiliu@bjmu.edu.cn" class="button button-light">moleiliu@bjmu.edu.cn</a>
+    </div>
+  </div>
+  <aside class="profile-card">
+    <img src="assets/images/profile-placeholder.svg" alt="Molei Liu profile placeholder">
+    <div class="profile-content">
+      <strong data-i18n="hero.affiliation1">Peking University Health Science Center</strong>
+      <span data-i18n="hero.affiliation2">Beijing International Center for Mathematical Research</span>
+      <span class="profile-divider"></span>
+      <span data-i18n="hero.training">Ph.D. in Biostatistics, Harvard University</span>
+      <span data-i18n="hero.previous">Previously: Assistant Professor, Columbia University</span>
+    </div>
+  </aside>
+</section>
 
-        <aside class="identity-card">
-          <div class="identity-top">
-            <div class="portrait-shell"><img src="assets/images/profile-placeholder.svg" alt="Molei Liu profile placeholder" /></div>
-            <div>
-              <p class="identity-label" data-i18n="hero.current">CURRENT</p>
-              <h2 data-i18n="hero.position">Researcher & Assistant Professor</h2>
-              <p data-i18n="hero.pku">Peking University Health Science Center</p>
-              <p data-i18n="hero.bicmr">Beijing International Center for Mathematical Research</p>
-            </div>
-          </div>
-          <div class="identity-rule"></div>
-          <div class="identity-history">
-            <div><span>2022–2025</span><strong data-i18n="hero.columbia">Columbia University</strong></div>
-            <div><span>Ph.D. 2022</span><strong data-i18n="hero.harvard">Harvard Biostatistics</strong></div>
-          </div>
-          <p class="photo-tip" data-i18n="hero.photoTip">Replace the placeholder with your own photo anytime.</p>
-        </aside>
-      </div>
+<section class="highlight-strip">
+  <div class="container highlights">
+    <div><strong>22</strong><span data-i18n="highlights.methodology">methodological & theoretical works</span></div>
+    <div><strong>8</strong><span>JASA · JRSSB · Biometrika</span></div>
+    <div><strong>5</strong><span>JMLR</span></div>
+    <div><strong>Science</strong><span data-i18n="highlights.science">co-first author</span></div>
+  </div>
+</section>
 
-      <div class="metrics-wrap">
-        <div class="metrics-intro"><span class="mini-label" data-i18n="metrics.label">METHODOLOGICAL RESEARCH</span><p data-i18n="metrics.note">Published or forthcoming work listed in the current CV.</p></div>
-        <div class="metrics-grid">
-          <article class="metric-card metric-feature"><div class="metric-number">22</div><div><h3 data-i18n="metrics.totalTitle">Methodological & theoretical works</h3><p data-i18n="metrics.totalText">A sustained program spanning statistical theory, inference, transfer learning, semi-supervised learning, and robust ML.</p></div></article>
-          <article class="metric-card"><div class="metric-number">8</div><h3>JASA · JRSSB · Biometrika</h3><p data-i18n="metrics.statsText">Methodological papers in three flagship statistics journals.</p></article>
-          <article class="metric-card"><div class="metric-number">5</div><h3>JMLR</h3><p data-i18n="metrics.jmlrText">Methodological work connecting modern statistics and machine learning.</p></article>
-          <article class="metric-card"><div class="metric-number">3</div><h3>NeurIPS · ICML</h3><p data-i18n="metrics.mlText">Top machine-learning conference publications on robust inference and learning.</p></article>
-        </div>
-      </div>
-    </section>
+<section class="section container" id="research">
+  <div class="section-heading"><p class="section-label">01</p><div><h2 data-i18n="research.title">Research</h2><p data-i18n="research.subtitle">A methods-driven program motivated by modern biomedical data.</p></div></div>
+  <div class="research-grid" id="research-grid"></div>
+</section>
 
-    <section class="section section-dark" id="research">
-      <div class="shell">
-        <div class="section-head light"><div><span class="section-num">01</span><p class="section-eyebrow" data-i18n="research.eyebrow">RESEARCH PROGRAM</p></div><div><h2 data-i18n="research.title">Methods first.\nApplications that matter.</h2><p data-i18n="research.intro">My work is organized around a common question: how can we make statistical learning reliable when populations differ, labels are scarce, models are imperfect, or data cannot simply be pooled?</p></div></div>
-        <div class="research-mosaic" id="research-mosaic"></div>
-        <div class="research-banner"><div><span class="mini-label" data-i18n="research.applicationLabel">BIOMEDICAL TRANSLATION</span><h3 data-i18n="research.applicationTitle">Electronic health records · Biobanks · Genetics · Clinical AI</h3></div><p data-i18n="research.applicationText">Methodological questions are often motivated by real biomedical constraints: multi-institutional data, population heterogeneity, high-dimensional phenotypes, limited labels, and distribution shift.</p></div>
-      </div>
-    </section>
+<section class="section section-alt" id="methodology">
+  <div class="container">
+    <div class="section-heading"><p class="section-label">02</p><div><h2 data-i18n="methodology.title">Selected Methodological Work</h2><p data-i18n="methodology.subtitle">Selected published and forthcoming work. Author roles are shown explicitly based on the current CV.</p></div></div>
+    <div class="publication-controls"><div id="method-filters" class="filters"></div><button id="method-toggle" class="text-button" type="button" data-i18n="methodology.showAll">Show all 22 methodology papers</button></div>
+    <div class="publication-list" id="methodology-list"></div>
+  </div>
+</section>
 
-    <section class="section publications-section" id="publications">
-      <div class="shell">
-        <div class="section-head"><div><span class="section-num">02</span><p class="section-eyebrow" data-i18n="pubs.eyebrow">SELECTED WORK</p></div><div><h2 data-i18n="pubs.title">Methodological publications</h2><p data-i18n="pubs.intro">The default view emphasizes papers that best represent my methodological research program. Use the filters to browse by research theme.</p></div></div>
-        <div class="pub-controls"><div class="filter-row" id="pub-filters"></div><button id="toggle-pubs" class="show-more" type="button"><span data-i18n="pubs.showAll">Show all listed methodology papers</span><span aria-hidden="true">＋</span></button></div>
-        <div class="pub-stack" id="pub-stack"></div>
-      </div>
-    </section>
+<section class="section container" id="collaboration">
+  <div class="section-heading"><p class="section-label">03</p><div><h2 data-i18n="collaboration.title">Interdisciplinary Collaborations</h2><p data-i18n="collaboration.subtitle">Selected collaborative work connecting statistical methodology with genetics, EHRs, clinical research, and population health.</p></div></div>
+  <div class="featured-grid" id="collaboration-list"></div>
+</section>
 
-    <section class="section section-ink" id="people">
-      <div class="shell">
-        <div class="section-head light"><div><span class="section-num">03</span><p class="section-eyebrow" data-i18n="people.eyebrow">RESEARCH GROUP</p></div><div><h2 data-i18n="people.title">People</h2><p data-i18n="people.intro">Postdoctoral fellows, Ph.D. students, and master's students. The layout is ready for photographs and individual profiles.</p></div></div>
-        <div class="people-groups" id="people-groups"></div>
-      </div>
-    </section>
+<section class="section section-alt" id="preprints">
+  <div class="container">
+    <div class="section-heading"><p class="section-label">04</p><div><h2 data-i18n="preprints.title">Selective Preprints & Manuscripts</h2><p data-i18n="preprints.subtitle">Recent manuscripts under revision or in submission. Status is reported as listed in the current CV.</p></div></div>
+    <div class="publication-list" id="preprint-list"></div>
+  </div>
+</section>
 
-    <section class="section about-section" id="about">
-      <div class="shell">
-        <div class="section-head"><div><span class="section-num">04</span><p class="section-eyebrow" data-i18n="about.eyebrow">ABOUT</p></div><div><h2 data-i18n="about.title">Statistics across heterogeneous data.</h2></div></div>
-        <div class="about-grid"><article class="about-story"><p class="about-lead" data-i18n="about.lead">My research sits at the intersection of statistical theory, machine learning, and biomedical data science.</p><p data-i18n="about.p1">A central theme is reliable learning across data sources and populations. I study how auxiliary samples, unlabeled observations, surrogates, and structural knowledge can be used efficiently without requiring unrealistic homogeneity or perfectly specified models.</p><p data-i18n="about.p2">I received my Ph.D. in Biostatistics from Harvard University and subsequently joined Columbia University as a tenure-track Assistant Professor. Since March 2025, I have been a Researcher and tenure-track Assistant Professor at Peking University.</p></article><aside class="timeline-card"><h3 data-i18n="about.path">Academic path</h3><div id="timeline"></div></aside></div>
-        <div class="recognition-grid"><article><span>2025–2027</span><h3 data-i18n="about.nsfTitle">NSFC Excellent Young Scientists Fund (Overseas)</h3><p data-i18n="about.nsfText">Principal Investigator</p></article><article><span>2024–2025</span><h3 data-i18n="about.r01Title">U.S. NIA R01</h3><p data-i18n="about.r01Text">Multiple Principal Investigator (1/3)</p></article><article><span>2024</span><h3 data-i18n="about.awardTitle">Sanford Bolton Faculty Scholar Award</h3><p data-i18n="about.awardText">Columbia Mailman School of Public Health</p></article></div>
-      </div>
-    </section>
+<section class="section container" id="people">
+  <div class="section-heading"><p class="section-label">05</p><div><h2 data-i18n="people.title">Research Group</h2><p data-i18n="people.subtitle">Postdoctoral fellows, Ph.D. students, and master's students.</p></div></div>
+  <div id="people-groups"></div>
+</section>
 
-    <section class="contact-section" id="contact"><div class="shell contact-inner"><div><span class="mini-label" data-i18n="contact.label">COLLABORATION</span><h2 data-i18n="contact.title">Interested in robust statistical learning for biomedical data?</h2></div><div class="contact-side"><p data-i18n="contact.text">I welcome collaborations connecting methodological statistics with challenging problems in EHRs, biobanks, genetics, and clinical research.</p><a href="mailto:moleiliu@bjmu.edu.cn" class="contact-mail">moleiliu@bjmu.edu.cn ↗</a></div></div></section>
-  </main>
+<section class="section section-alt" id="about">
+  <div class="container">
+    <div class="section-heading"><p class="section-label">06</p><div><h2 data-i18n="about.title">About</h2><p data-i18n="about.subtitle">Academic appointments, training, recognition, and service.</p></div></div>
+    <div class="about-grid">
+      <div class="about-text"><p class="about-lead" data-i18n="about.lead">My research lies at the intersection of statistical theory, machine learning, and biomedical data science.</p><p data-i18n="about.body">A central goal is to develop reliable and efficient learning methods when populations differ, labels are limited, data are distributed across institutions, or working models are misspecified.</p></div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+    <div class="about-cards">
+      <article><span>2025–2027</span><strong data-i18n="about.funding1">NSFC Excellent Young Scientists Fund (Overseas)</strong><p data-i18n="about.funding1role">Principal Investigator</p></article>
+      <article><span>2024–2025</span><strong data-i18n="about.funding2">U.S. National Institute on Aging R01</strong><p data-i18n="about.funding2role">Multiple Principal Investigator (1/3)</p></article>
+      <article><span>2024</span><strong data-i18n="about.award">Sanford Bolton Faculty Scholar Award</strong><p>Columbia University Mailman School of Public Health</p></article>
+    </div>
+  </div>
+</section>
 
-  <footer><div class="shell footer-inner"><p>© <span id="year"></span> Molei Liu · 刘默雷</p><p data-i18n="footer.note">Bilingual academic website · GitHub Pages</p></div></footer>
-  <script src="data.js"></script><script src="script.js"></script>
-</body>
-</html>
+<section class="contact">
+  <div class="container contact-inner"><div><p class="eyebrow" data-i18n="contact.eyebrow">CONTACT</p><h2 data-i18n="contact.title">Interested in collaboration?</h2></div><div><p data-i18n="contact.text">I welcome collaborations on methodological statistics, machine learning, EHRs, biobanks, genetics, and clinical research.</p><a href="mailto:moleiliu@bjmu.edu.cn">moleiliu@bjmu.edu.cn</a></div></div>
+</section>
+</main>
+
+<footer><div class="container footer-inner"><span>© <span id="year"></span> Molei Liu</span><span data-i18n="footer.text">Bilingual academic homepage · GitHub Pages</span></div></footer>
+<script src="data.js"></script><script src="script.js"></script>
+</body></html>
