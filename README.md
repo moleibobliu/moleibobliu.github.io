@@ -6,7 +6,7 @@ This version intentionally simplifies the visual design while strengthening the 
 
 - Simpler faculty-homepage style 
 - No CV download/file
-- Methodological research remains the primary identity
+- Methodological research remains the primary identity 
 - Dedicated **Interdisciplinary Collaborations** section
 - Dedicated **Selective Preprints & Manuscripts** section
 - Every displayed work has an explicit authorship/contribution label
