@@ -486,7 +486,7 @@ const COLLABORATIONS = [
 
 const PREPRINTS = [
   {
-    "year": "2026+",
+    "year": "2025+",
     "title": "Semi-supervised Clustering Through Representation Learning of High-dimensional Count Data",
     "authors": "L. Wang, M. Li, Z. Xia, M. Liu, T. Cai",
     "venue": "Journal of the American Statistical Association",
@@ -495,7 +495,7 @@ const PREPRINTS = [
     "link": "https://arxiv.org/abs/2505.20731"
   },
   {
-    "year": "2026+",
+    "year": "2024+",
     "title": "Bending the Learning Curve for EHR Research via Knowledge-Driven Online Multimodal Automated Phenotyping System",
     "authors": "X. Xiong, S.M. Sweet, …, M. Liu, T. Cai",
     "venue": "Journal of the American Statistical Association (Application and Case Study)",
@@ -504,7 +504,7 @@ const PREPRINTS = [
     "link": "https://doi.org/10.1101/2023.09.29.23296239"
   },
   {
-    "year": "2026+",
+    "year": "2024+",
     "title": "Adaptive and Efficient Learning with Blockwise Missing and Semi-Supervised Data",
     "authors": "Y. Li, R. Wang, Y. Wei, M. Liu",
     "venue": "Journal of the American Statistical Association",
@@ -513,7 +513,7 @@ const PREPRINTS = [
     "link": "https://arxiv.org/abs/2405.18722"
   },
   {
-    "year": "2026+",
+    "year": "2024+",
     "title": "Domain adaptation optimized for robustness in mixture populations",
     "authors": "K. Zhan, X. Xiong, Z. Guo, T. Cai, M. Liu",
     "venue": "Journal of the American Statistical Association",
@@ -522,7 +522,7 @@ const PREPRINTS = [
     "link": "https://arxiv.org/abs/2407.20073"
   },
   {
-    "year": "2026+",
+    "year": "2024+",
     "title": "Multi-source Stable Variable Importance Measure via Adversarial Machine Learning",
     "authors": "Z. Wang, B. Shi, N. Si, Z. Guo, M. Liu",
     "venue": "Manuscript",
@@ -568,7 +568,7 @@ const PREPRINTS = [
   },
   {
     "year": "2026+",
-    "title": "Distributionally Robust Transfer Learning with Structurally Missing Covariates, with Application to Cross-National Cardiac Arrest Prediction",
+    "title": "Distributionally Robust Transfer Learning with Structurally Missing Covariates",
     "authors": "S. Li, C. Hong, Z. Tian, B.S.-H. Leong, K. Nakagawa, H. Tanaka, S.D. Shin, K.Q. Dai, D.N. Son, M.E.H. Ong, N. Liu, M. Liu",
     "venue": "Manuscript",
     "statusKey": "submission",
