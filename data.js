@@ -159,7 +159,7 @@ const I18N = {
       "forthcoming": "Forthcoming",
       "minor": "小修中",
       "major": "大修中",
-      "submission": "投稿中",
+      "submission": "准备/投稿中",
       "preparation": "准备中"
     }
   }
