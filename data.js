@@ -211,12 +211,21 @@ const RESEARCH = [
 const METHODOLOGY = [
   {
     "year": "2026",
+    "title": "Bending the Learning Curve for EHR Research via Knowledge-Driven Online Multimodal Automated Phenotyping System",
+    "authors": "X. Xiong, S.M. Sweet, …, M. Liu, T. Cai",
+    "venue": "Journal of the American Statistical Association (Application and Case Study), forthcoming",
+    "journal": "JASA",
+    "roleKey": "coCorr",
+    "link": "https://doi.org/10.1101/2023.09.29.23296239"
+  },
+  {
+    "year": "2026",
     "title": "Transfer Learning of CATE with Kernel Ridge Regression",
     "authors": "S. Kim, H. Liu, M. Liu, K. Wang",
-    "venue": "Journal of the American Statistical Association, forthcoming",
+    "venue": "Journal of the American Statistical Association",
     "journal": "JASA",
     "roleKey": "soleCorr",
-    "link": "https://arxiv.org/abs/2502.11331"
+    "link": "https://www.tandfonline.com/doi/full/10.1080/01621459.2026.2719040"
   },
   {
     "year": "2025",
@@ -246,6 +255,15 @@ const METHODOLOGY = [
     "link": "https://doi.org/10.1093/jrsssb/qkad081"
   },
   {
+    "year": "2023",
+    "title": "Assessing the Most Vulnerable Subgroup to Type II Diabetes Associated with Statin Usage: Evidence from Electronic Health Record Data",
+    "authors": "X. Guo, W. Wei, M. Liu, T. Cai, C. Wu, J. Wang",
+    "venue": "Journal of the American Statistical Association (Application and Case Study), 118, 1488–1499",
+    "journal": "JASa",
+    "roleKey": "coauthor",
+    "link": "https://doi.org/10.1080/01621459.2022.2157727"
+  },
+  {
     "year": "2022",
     "title": "Efficient Evaluation of Prediction Rules in Semi-supervised Settings under Stratified Sampling",
     "authors": "J. Gronsbell, M. Liu, L. Tian, T. Cai",
@@ -271,15 +289,6 @@ const METHODOLOGY = [
     "journal": "JASA",
     "roleKey": "alphabetical",
     "link": "https://doi.org/10.1080/01621459.2021.1904958"
-  },
-  {
-    "year": "2023",
-    "title": "Assessing the Most Vulnerable Subgroup to Type II Diabetes Associated with Statin Usage: Evidence from Electronic Health Record Data",
-    "authors": "X. Guo, W. Wei, M. Liu, T. Cai, C. Wu, J. Wang",
-    "venue": "Journal of the American Statistical Association (Application and Case Study), 118, 1488–1499",
-    "journal": "JASA Case Study",
-    "roleKey": "coauthor",
-    "link": "https://doi.org/10.1080/01621459.2022.2157727"
   },
   {
     "year": "2026",
@@ -493,15 +502,6 @@ const PREPRINTS = [
     "statusKey": "minor",
     "roleKey": "soleCorr",
     "link": "https://arxiv.org/abs/2505.20731"
-  },
-  {
-    "year": "2024+",
-    "title": "Bending the Learning Curve for EHR Research via Knowledge-Driven Online Multimodal Automated Phenotyping System",
-    "authors": "X. Xiong, S.M. Sweet, …, M. Liu, T. Cai",
-    "venue": "Journal of the American Statistical Association (Application and Case Study)",
-    "statusKey": "minor",
-    "roleKey": "coCorr",
-    "link": "https://doi.org/10.1101/2023.09.29.23296239"
   },
   {
     "year": "2024+",
