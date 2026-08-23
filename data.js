@@ -259,7 +259,7 @@ const METHODOLOGY = [
     "title": "Assessing the Most Vulnerable Subgroup to Type II Diabetes Associated with Statin Usage: Evidence from Electronic Health Record Data",
     "authors": "X. Guo, W. Wei, M. Liu, T. Cai, C. Wu, J. Wang",
     "venue": "Journal of the American Statistical Association (Application and Case Study), 118, 1488–1499",
-    "journal": "JASa",
+    "journal": "JASA",
     "roleKey": "coauthor",
     "link": "https://doi.org/10.1080/01621459.2022.2157727"
   },
