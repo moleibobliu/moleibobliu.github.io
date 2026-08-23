@@ -15,7 +15,7 @@ Use:
 - Branch: `master`
 - Folder: `/ (root)`
 
-## Main content files 
+## Main content files  
 
 - `index.html` — page structure
 - `styles.css` — visual style
