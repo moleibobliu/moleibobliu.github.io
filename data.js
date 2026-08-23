@@ -429,15 +429,6 @@ const COLLABORATIONS = [
     "link": "https://doi.org/10.1126/science.adj1182"
   },
   {
-    "year": "2023",
-    "title": "Assessing the Most Vulnerable Subgroup to Type II Diabetes Associated with Statin Usage: Evidence from Electronic Health Record Data",
-    "authors": "X. Guo, W. Wei, M. Liu, T. Cai, C. Wu",
-    "venue": "Journal of the American Statistical Association (Application and Case Study), 118, 1488–1499",
-    "journal": "JASA Case Study",
-    "roleKey": "coauthor",
-    "link": "https://doi.org/10.1080/01621459.2022.2157727"
-  },
-  {
     "year": "2021",
     "title": "Clinical Knowledge Extraction via Sparse Embedding Regression (KESER) with Multi-center Large-scale Electronic Health Record Data",
     "authors": "C. Hong, E. Rush, M. Liu, D. Zhou, J. Sun, A. Sonabend, …, K.P. Liao, T. Cai",
