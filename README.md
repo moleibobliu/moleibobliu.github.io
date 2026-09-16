@@ -13,7 +13,7 @@ Use:
 - **Settings → Pages**
 - **Deploy from a branch**
 - Branch: `master`
-- Folder: `/ (root)`
+- Folder: `/ (root)` 
 
 ## Main content files   
 
