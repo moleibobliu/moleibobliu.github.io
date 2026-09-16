@@ -210,13 +210,22 @@ const RESEARCH = [
 
 const METHODOLOGY = [
   {
+    "year": "2025+",
+    "title": "Semi-supervised Clustering Through Representation Learning of High-dimensional Count Data",
+    "authors": "L. Wang, M. Li, Z. Xia, M. Liu, T. Cai",
+    "venue": "Journal of the American Statistical Association, forthcoming",
+    "journal": "JASA",
+    "roleKey": "soleCorr",
+    "link": "https://arxiv.org/abs/2505.20731"
+  },
+  {
     "year": "2026",
     "title": "Bending the Learning Curve for EHR Research via Knowledge-Driven Online Multimodal Automated Phenotyping System",
     "authors": "X. Xiong, S.M. Sweet, …, M. Liu, T. Cai",
     "venue": "Journal of the American Statistical Association (Application and Case Study), forthcoming",
     "journal": "JASA",
     "roleKey": "coCorr",
-    "link": "https://doi.org/10.1101/2023.09.29.23296239"
+    "link": "https://www.tandfonline.com/doi/abs/10.1080/01621459.2026.2730499"
   },
   {
     "year": "2026",
@@ -485,15 +494,6 @@ const COLLABORATIONS = [
 ];
 
 const PREPRINTS = [
-  {
-    "year": "2025+",
-    "title": "Semi-supervised Clustering Through Representation Learning of High-dimensional Count Data",
-    "authors": "L. Wang, M. Li, Z. Xia, M. Liu, T. Cai",
-    "venue": "Journal of the American Statistical Association",
-    "statusKey": "minor",
-    "roleKey": "soleCorr",
-    "link": "https://arxiv.org/abs/2505.20731"
-  },
   {
     "year": "2024+",
     "title": "Adaptive and Efficient Learning with Blockwise Missing and Semi-Supervised Data",
